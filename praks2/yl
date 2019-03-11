@@ -1,0 +1,9 @@
+#!/bin/bash
+#
+# kasutaja tervitus
+#
+# skripti algus
+#
+echo "Tere User!"
+#
+# skripti lopp
