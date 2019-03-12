@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+echo "Vallo Ainsar" # prindib märkide vahel olevad tähed
+echo "ISP118" # prindib märkide vahel oleva tähed
+echo "Antud aine on väga vinge." # prindib jutumärkides oleva lause
+echo "Hetkel olen natukene toppama jäänud..." # prindib jutumärkides oleva lause 
+#
+#
+# skripti lõpp
