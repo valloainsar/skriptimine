@@ -1,0 +1,8 @@
+#!/bin/bash
+# leiab faild asukohast /var ning sorteerib need ridadearvu järgi
+find /var -name "*.log" 2>/dev/null -exec wc -l {} + | sort -rn | cut -c7- | sed -n '1!p' 
+#
+#
+#
+# Siin lõppeb skript
+#
