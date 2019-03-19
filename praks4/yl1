@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+#
+
+read -p "Sisesta om ees- ja perenimi: " ees pere # Küsib kasutajalt ees ja pere nime, mis lükatakse kohe ka minu poolt antud sõnadesse "ees" "pere"
+echo "Sinu eesnimi on $ees ja perenimi on $pere" # Kirjutab selle käsureale
+
+#
+# Siin on skripti lõpp
+#
