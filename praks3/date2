@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+DAY=$(date +"%A, %B %d,%Y") # Defineeritud, mis on "Day"
+TIME=$(date +"%H.%M") # Defineeritud, mis on "Time"
+
+echo "Today is $DAY" #  Kuvab käsureale eelnefa (DAY) definitsiooni
+echo "Time is $TIME" # Kuvab käsureale aja (eelenevalt defineeritud)
+echo -e -n "Calender of" # Kirjutab kalendri kohale mis kuuga on tegu
+cal # See käsk kuvab kalendri
+#
+#Sellega on skript lõppenud
+#
