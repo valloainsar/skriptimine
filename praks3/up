@@ -1,0 +1,10 @@
+#!/bin/bash
+#
+# See script kuvab masina ülevaloleku aja
+#
+hostname 
+uptime | cut -f1 -d ',' 
+
+#
+# Selle skripti lõpp
+#
