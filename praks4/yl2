@@ -1,0 +1,27 @@
+#!/bin/bash
+#
+#
+echo -n "Sisesta aluskandiku pikkus ja laius sentimeetrites: " # -n funktioon laseb kasutajal kirjutada sisendi
+read pikkus laius  # read loeb eelnevalt sisestatud andmed
+echo "Aluskandiku pikkus on $pikkus cm ja laius $laius cm."
+x=$(( $pikkus * $laius ))	# Siin on defineeritud x-i väärtus...
+echo "Aluskandiku ruumala on $x ruut-sentimeetrit"	# Siin on x-i väärtus kuvatud kasutajale
+echo -n "Sisesta 1 küpsise pikkus ja laius sentimeetrites: "
+read pikkus1 laius2
+y=$(( $pikkus1 * $laius2 ))
+a=$(( x / y ))
+echo "Ühe kihi küpsiste kandikule kandmiseks kulub $a küpsist..."
+echo -n "Sisesta soovitud kihtide arv: "
+read kiht
+abba=$(( $kiht * $a ))
+echo "Vaja on $abba arv küpsist..."
+echo -n "Sisesta mitu küpsist on ühes pakis: "
+read pakk
+pakk22=$(( $abba / $pakk +1 )) # Lisasin +1 sest siis on kindel et küpsistest ei jää puudu, halvimal juhul on sul 1 pakk küpsiseid üle, mis on ju positiivne, saab maiustada
+
+echo "Poest tuleb osta $pakk22 pakki küpsist... :P"
+
+#
+# Koodi lõppppp
+#
+#
