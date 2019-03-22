@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Siit algab script
+#
+
+echo -n "Sisesta esimese kaateti pikkus: "
+read kaatet1
+echo "Ühe kaateti pikkus on $kaatet1 ..."
+echo -n "Sisesta teise kaateti pikkus: "
+read kaatet2
+
+x=$(echo "sqrt ($kaatet1*$kaatet1+$kaatet2*$kaatet2)" | bc -l)
+echo "Selliste mõõtmetega kolmnurga hüpotenuusiks on $x ... Hääd pääva teile! :D"
+
+
+#
+# Selle scripti lõppppppppppp :D
+#
+
