@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+#
+#
+echo -n "Sisesta, mitu reisijat on bussis: "  # Palub sisendit
+read reisija	# Loeb sisendit ning defineerib selle
+echo "Bussis on $reisija reisijat..."
+echo -n "Sisesta, mitu kohta on bussis: "
+read kohad
+echo "Bussis on $kohad kohta..."
+echo -n "Sisesta busside arv: "
+read busarv
+echo "Busside arv on $busarv ..."
+xx=$(( $kohad * $busarv ))	# Tehted
+x=$(( $reisija / $xx ))
+y=$(( $reisija - $xx ))
+echo "Täielikult täidetud busside arv on $x ."
+echo "Puudu jääb $y kohta... :O"
+
+#
+#
+# Siin on  koodi lõpppp
+#
