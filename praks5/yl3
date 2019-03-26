@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+#
+echo "0-pyhapaev"
+echo "1-esmaspaev"
+echo "2-teisipaev"
+echo "3-kolmapaev"
+echo "4-neljapaev"
+echo "5-reede"
+echo "6-laupaev"
+echo -n "Sisesta, mis päeval lähed puhkusele:"; read paev
+echo -n "Sisesta mitu ööpäeva oled reisil:"; read tp
+tagasi=$((( $paev + $tp ) % 7 ))	# Arvutab vahe puhkuse päeva ja puhkusel oldud paevade vahel ning max numbrix on 7
+
+if [ $tagasi -eq 0 ]; then		# defineeritud, mis juhtudel, mis päev tuleb
+onn="pyhapaeval"
+elif [ $tagasi -eq 1 ]; then
+onn="esmaspaeval"
+elif [ $tagasi -eq 2 ]; then
+onn="teisipaeval"
+elif [ $tagasi -eq 3 ]; then
+onn="kolmapaeval"
+elif [ $tagasi -eq 4 ]; then
+onn="neljapaeval"
+elif [ $tagasi -eq 5 ]; then
+onn="reedel"
+elif [ $tagasi -eq 6 ]; then
+onn="laupaeval"
+fi
+
+echo "Te olete tagasi $onn ..."
