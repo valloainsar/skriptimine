@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+echo -n "Sisesta kuu number: \c"; read kuunr
+
+if test $kuunr -eq 1 -o $kuunr -eq 2 -o $kuunr -eq 12
+then
+	echo "Tegemist on talvekuuga!"
+elif test $kuunr -ge 3 -a $kuunr -le 5
+then
+	echo "Tegemist on kevadkuuga!"
+elif test $kuunr -ge 6 -a $kuu -le 8
+then 
+	echo "Tegemist on suvekuuga!"
+elif test $kuunr -ge 9 -a $kuunr -le 11
+then
+	echo "Tegemist on sygiskuuga!"
+else
+	echo "Sellist kuud ei eksisteeri!"
+fi
