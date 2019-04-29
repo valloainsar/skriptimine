@@ -1,0 +1,22 @@
+#!/bin/bash
+#
+echo -e "Sisesta praegune täistund: \c"; read aeg
+
+if test $aeg -ge 6 -a $aeg -lt 12
+then
+	echo "Tere, hommik!"
+elif test $aeg -ge 12 -a $aeg -lt 18
+then
+	 echo "Tere paeva!"
+elif test $aeg -ge 18 -a $aeg -lt 22
+then 
+	echo "Tere ohtust!"
+elif test $aeg -ge 22 -a $aeg -lt 24
+then
+	echo "Haad ood!"
+elif test $aeg -ge 0 -a $aeg -lt 6
+then 
+	echo "Haad ood!"
+else
+	echo "Proovi yhe korra veel!"
+fi
