@@ -1,0 +1,24 @@
+#!/bin/bash
+#
+kes=$(whoami)
+aeg=$(/home/user/skriptimine/praks7/aeg)
+if test $aeg -ge 6 -a $aeg -lt 12
+then
+	echo "Tere, hommik $kes!"
+elif test $aeg -ge 12 -a $aeg -lt 18
+then
+	 echo "Tere paeva $kes!"
+elif test $aeg -ge 18 -a $aeg -lt 22
+then 
+	echo "Tere ohtust $kes!"
+elif test $aeg -ge 22 -a $aeg -lt 24
+then
+	echo "Haad ood $kes!"
+elif test $aeg -ge 0 -a $aeg -lt 6
+then 
+	echo "Haad ood $kes!"
+else
+	echo "Proovi yhe korra veel!"
+fi
+
+
