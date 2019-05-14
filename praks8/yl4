@@ -1,0 +1,23 @@
+#!/bin/bash
+#
+
+echo -e "Sisesta suvaline taisarv: \c"; read suvaline
+
+if [ $suvaline -eq 0 -o $suvaline -eq 1 ]
+then
+	echo "$suvaline - ei ole algarv..."
+else
+	jaga=2
+	yle=$(( $suvaline % $jaga ))
+while [ $yle -ne 0 ]
+do
+	jaga=$(($jaga + 1))
+	yle=$(( $suvaline % $jaga ))
+done
+if [ $suvaline -eq $jaga ]
+then
+	echo "$suvaline - on algarv..."
+else
+	echo "$suvaline - ei ole algarv..."
+fi
+fi
