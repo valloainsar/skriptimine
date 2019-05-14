@@ -1,0 +1,12 @@
+#!/bin/bash
+#
+echo -n "Sisesta suvaline taisarv: "; read suvaline
+kumm=10
+summa=0
+while [ $suvaline -ne 0 ]
+do
+	muu=$(($arv % $kumm))
+	summa=$(($summa + $muu))
+	arv=$(($suvaline / $kumm))
+done
+echo "Taisarvude summa on $summa"
