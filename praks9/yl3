@@ -4,14 +4,20 @@
 echo -n "Sisesta ridade arv: "; read rida
 echo -n "Sisesta tarnide arv reas: "; read tarn
 
-hmm=$(( $rida - 1))
-i=x
-j=x
-for i in {1..$rida.. $hmm}
+for (( i = 1; i <= $rida; i++ ))
 do
+
 	for (( j = 1; j <= $tarn; j++ ))
 	do
-		echo -n "* "
+		if (($i == 1 || $i == $rida))
+		then
+			echo -n "X "
+		elif (($j == 1 || $j == $tarn))
+		then
+			echo -n "X "
+		else
+			echo -n "  "
+		fi
 	done
-echo $rida
+echo ""
 done
