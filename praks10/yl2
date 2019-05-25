@@ -1,0 +1,20 @@
+#!/bin/bash
+#
+#
+echo -n "Sisestage kuu number: "; read kuu
+if test $kuu -eq 1 -o $kuu -eq 2 -o $kuu -eq 12 #Testitakse sisestatud vaartust max vaartus on 12, esimesel real on defineeritud, et 1,2 ja 12 on talvekuud
+then 
+echo "Teie sisestatud number on talvekuu."
+elif test $kuu -ge 3 -a $kuu -le 5
+then
+echo "Teie sisestatud number on kevadkuu."
+elif test $kuu -ge 6 -a $kuu -le 8
+then
+echo "Teie sisestatud number on suvekuu."
+elif test $kuu -ge 9 -a $kuu -le 11
+then
+echo "Teie sisestatud number on sugiskuu."
+else
+echo "Proovi korra veel!"
+fi
+#lopp
