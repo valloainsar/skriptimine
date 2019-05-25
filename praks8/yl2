@@ -3,7 +3,7 @@
 echo -n "Sisesta suvaline taisarv: "; read suvaline
 kumm=10
 summa=0
-while [ $suvaline -ne 0 ]
+while [ $suvaline -ne 0 ] # tingimus sisestatud arvule
 do
 	muu=$(($arv % $kumm))
 	summa=$(($summa + $muu))
