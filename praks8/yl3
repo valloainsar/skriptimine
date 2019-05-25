@@ -2,8 +2,8 @@
 #
 echo -n "Sisesta kuu number: "; read kuu
 
-case $kuu in
-	"1") echo "See on Jaanuar";;
+case $kuu in		# Testitakse sisestatud numbrit
+	"1") echo "See on Jaanuar";; # Juhul kui sisestatud number klapib mõne järgmise defineeritud numbriga siis saab kasutaja vastava väljundi..
 	"2") echo "See on Veebruar";;
 	"3") echo "See on Märts";;
 	"4") echo "See on Aprill";;
