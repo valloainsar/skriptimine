@@ -2,12 +2,13 @@
 #
 
 summa=0
-for (( arv=1; arv<11; arv++ ))
+for (( arv=1; arv<11; arv++ )) # Testib numbreid vahemikus 1-10, suuremaid mitte
 do
-	jaak=$(($arv % 2))
-	if [ $jaak -eq 0 ]; then
-		summa=$(($summa + $arv))
-		echo $summa
+	jaak=$(($arv % 2)) # arvutab välja jäägi
+	if [ $jaak -eq 0 ]
+		then
+		summa=$(($summa + $arv)) # arvutab välja paarisarvude summa
+		echo $summa # defineeritakse uus "Summa" kuna juba varem on samu definitsioone kasutatud
 fi
 done
 echo "Arvud vahemikus 1 kuni 10 paarisarvude summa on: $summa"
