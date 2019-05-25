@@ -1,8 +1,8 @@
 #!/bin/bash
 #
 #
-echo -n "Sisesta ridade arv: "; read rida
-echo -n "Sisesta tarnide arv reas: "; read tarn
+echo -n "Sisesta ridade arv: "; read rida # Küsib väärtused
+echo -n "Sisesta tarnide arv reas: "; read tarn # Nüüd on kasutaja enda teha mitu rida mitu sümbolit reas
 
 
 i=x
