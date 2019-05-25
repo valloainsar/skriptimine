@@ -9,15 +9,20 @@ do
 
 	for (( j = 1; j <= $tarn; j++ ))
 	do
-		if (($i == 1 || $i == $rida))
+		if (($i == 1 || $i == $rida)) # Kui on esimene ja viimane rida siis...
 		then
-			echo -n "X "
-		elif (($j == 1 || $j == $tarn))
+			echo -n "X " # lisab ta kõik sübolid 
+		elif (($j == 1 || $j == $tarn)) # Kui on vahepealne rida siis...
 		then
-			echo -n "X "
+			echo -n "X " # Lisab ta sübolid algusesse ja lõppu
 		else
-			echo -n "  "
+			echo -n "  " # Tekitab tühikud kujundi keskele
 		fi
 	done
 echo ""
 done
+#Nii tekibki kujund...
+# * * * * *
+# *	  *
+# *	  *
+# * * * * *
