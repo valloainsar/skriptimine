@@ -1,0 +1,15 @@
+#!/bin/bash
+#
+#
+echo -n "Sisesta oma vanus: "; read vanus #Kusib andmeid ja defineerib selle ara
+if (( $vanus > 0 && $vanus < 11 || $vanus == 11 )) # Testib sisestatud numbrid, antud tingimuse puhul peab olema sisestatud number 11 voi sellest vaiksem
+then echo "Sa oled laps!"
+elif (( $vanus > 11 && $vanus < 18 || $vanus == 18 ))
+then echo "Sa oled nooruk!"
+elif (( $vanus > 18 && $vanus < 63 || $vanus == 63 ))
+then echo "sa oled taiskasvanu!"
+elif (( $vanus > 63 ))
+then echo "Sa oled vana!"
+else echo "Sellele sisendile me vastust ei leidnud, proovi korra veel!"
+fi
+# Lopp
