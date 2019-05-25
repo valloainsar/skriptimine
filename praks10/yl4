@@ -1,0 +1,20 @@
+#/bin/bash#
+#
+#
+user=$( whoami )
+echo -n -e "Mis on kell praegu: "; read kellaeg # Kysib vaartust
+if [ $kellaeg -ge 6 -a $kellaeg -lt 12 ] # Siin testitakse sisendit, kui sisend on 6 kuni 11 siis on hommik jne
+then
+echo "Hommik, $user!"
+elif [ $kellaeg -ge 12 -a $kellaeg -lt 18 ]
+then
+echo "Kena paeva, $user!"
+elif [ $kellaeg -ge 18 -a $kellaeg -lt 22 ]
+then
+echo "Meeldivat ohtu jatku, $user!"
+elif [ $kellaeg -ge 22 -a $kellaeg -lt 24 ] || [ $kellaeg -ge 0 -a $kellaeg -lt 6 ]
+then
+echo "Maga hasti, $user!"
+else
+echo "Sisesta palun tunnivaartus ainult ning oopaevas on 24tundi, proovi korra veel! :)"
+fi
