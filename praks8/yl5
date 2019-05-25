@@ -2,19 +2,19 @@
 #
 
 echo -e "Sisesta suvaline taisarv: \c"; read suvaline
-for (( suvaline=1; suvaline=21; suvaline++ ))
+for (( suvaline=1; suvaline=21; suvaline++ )) # määratud vahemik mida testitakse
 do
 	jaga=2
-	yle=$(( $suvaline % $jaga ))
-		while [ $yle -ne 0 ]
-		do
+	yle=$(( $suvaline % $jaga )) # sooritatakse tehted
+		while [ $yle -ne 0 ] # Eelmiste tehete tulemused testitakse
+		do			# Kui test on positiivne sooritatakse järgnevad tehted
 		jaga=$(($jaga + 1))
 		yle=$(($suvaline % $jaga))
 		done
 done
-if $suvaline -eq $jaga
+if $suvaline -eq $jaga		# Testitakse ja võrreldakse tehteid omavahel
 then
-	echo "$suvaline - on algarv..."
+	echo "$suvaline - on algarv..."		# ja juba jäljundid
 else
 	echo "$suvaline - ei ole algarv..."
 fi
