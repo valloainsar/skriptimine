@@ -2,11 +2,11 @@
 #
 #
 i=x
-for (( $i = 1; $i <= 5; $i++ ))
+for (( $i = 1; $i <= 5; $i++ )) # 5 sümbolit 1 reas
 do
-	for (( j = 1; j <= 5; j++ ))
+	for (( j = 1; j <= 5; j++ )) # 5 rida
 	do
-		echo -n "$i "
+		echo -n "$i " # Kuvab sübolid
 	done
-echo ""
+echo ""	# sübolite vahele tyhik
 done
